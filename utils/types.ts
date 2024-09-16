@@ -6,6 +6,7 @@ export const User = z.object({
 });
 
 export const Property = z.object({
+  _id: z.string(),
   name: z.string(),
   type: z.string(),
   beds: z.number(),
