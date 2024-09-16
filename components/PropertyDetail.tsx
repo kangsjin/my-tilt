@@ -6,7 +6,7 @@ import {
   FaCheck,
   FaMapMarker,
 } from "react-icons/fa";
-import { FaM } from "react-icons/fa6";
+import PropertyMap from "./PropertyMap";
 
 const PropertyDetails = ({ property }: { property: any }) => {
   return (
@@ -95,8 +95,8 @@ const PropertyDetails = ({ property }: { property: any }) => {
         </ul>
       </div>
       {/* <!-- Map --> */}
-      <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-        <div id="map"></div>
+      <div className="bg-white p-6 rounded-lg shadow-md mt-6 h-80">
+        <PropertyMap property={property} />
       </div>
     </main>
   );
