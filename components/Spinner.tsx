@@ -9,7 +9,7 @@ const override = {
 const Spinner = () => {
   return (
     <ClipLoader
-      color="#3b82f6"
+      color="#01a086"
       cssOverride={override}
       size={150}
       arial-label="Loading Spinner"

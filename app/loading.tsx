@@ -8,13 +8,15 @@ const override = {
 
 const LoadingPage = () => {
   return (
-    <ClipLoader
-      color="#3b82f6"
-      cssOverride={override}
-      size={150}
-      arial-label="Loading Spinner"
-      loading
-    />
+    <div className="flex justify-center items-center h-screen">
+      <ClipLoader
+        color="#01a086"
+        cssOverride={override}
+        size={150}
+        arial-label="Loading Spinner"
+        loading
+      />
+    </div>
   );
 };
 
