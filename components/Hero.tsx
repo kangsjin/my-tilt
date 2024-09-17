@@ -1,11 +1,25 @@
+import main from "@/assets/images/main.png";
+
 const Hero = () => {
   return (
-    <section className="bg-[#01a086] py-20 mb-4">
+    <section
+      className="bg-pan-br bg-[#01a086] py-20 mb-4"
+      style={{
+        backgroundImage: `url('${main.src}')`,
+        backgroundSize: "cover",
+        backgroundPosition: "bottom",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-            🇩🇪에서 방 찾기 힘드시죠?
-          </h1>
+          <div className="flex">
+            <span className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+              🇩🇪에서 방 찾기 힘드시죠
+            </span>
+            <div className="bounce-in-right text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+              ?
+            </div>
+          </div>
           <p className="my-4 text-xl text-white">
             알아요.. 그래도 우리 포기하지 맙시다!
           </p>
